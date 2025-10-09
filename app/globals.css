@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+#V0-built-with-button-e9a7fdc1-0c93-4cb0-ab57-2833a484a992 {
+  display: none !important;
+}
+
 :root {
   /* Updated color tokens to red theme for WARP security company */
   --background: oklch(1 0 0); /* Pure white */
