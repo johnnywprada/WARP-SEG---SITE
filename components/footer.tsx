@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-background/60">© 2024 DÉF Segurança Eletrônica. Todos os direitos reservados.</p>
+          <p className="text-sm text-background/60">© 2024 WARP Sistemas Inteligentes. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
