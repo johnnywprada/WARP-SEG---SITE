@@ -27,7 +27,7 @@ export function Header() {
             <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
               <Image
                 src="/images/warp-logo-novo.png"
-                alt="WARP Segurança Eletrônica"
+                alt="DÉF Segurança Eletrônica"
                 width={180}
                 height={60}
                 className="h-12 w-auto"

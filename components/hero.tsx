@@ -30,7 +30,7 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 text-pretty">
-              A WARP oferece soluções completas em segurança eletrônica com tecnologia de ponta, instalação profissional
+              A DÉF oferece soluções completas em segurança eletrônica com tecnologia de ponta, instalação profissional
               e suporte especializado para residências e empresas.
             </p>
 
@@ -95,7 +95,7 @@ export function Hero() {
               >
                 <Image
                   src="/images/mascote-novo.png"
-                  alt="Mascote WARP - Robô de Segurança Eletrônica"
+                  alt="Mascote DÉF - Robô de Segurança Eletrônica"
                   width={400}
                   height={500}
                   className="w-full max-w-sm h-auto floating-animation hover:scale-105 transition-transform duration-300"

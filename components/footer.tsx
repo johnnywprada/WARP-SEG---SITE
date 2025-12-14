@@ -8,7 +8,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">WARP Segurança Eletrônica</span>
+              <span className="text-xl font-bold">DÉF Segurança Eletrônica</span>
             </div>
             <p className="text-background/80 mb-4 text-pretty">
               Especialistas em segurança eletrônica oferecendo soluções completas para proteger o que é mais importante
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-background/60">© 2024 WARP Segurança Eletrônica. Todos os direitos reservados.</p>
+          <p className="text-sm text-background/60">© 2024 DÉF Segurança Eletrônica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

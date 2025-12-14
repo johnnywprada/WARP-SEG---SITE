@@ -35,11 +35,11 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Por que escolher a WARP?
+              Por que escolher a DÉF?
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg text-pretty">
-                A WARP Segurança Eletrônica é uma empresa especializada em soluções completas de segurança, oferecendo
+                A DÉF Segurança Eletrônica é uma empresa especializada em soluções completas de segurança, oferecendo
                 desde a venda de equipamentos até a implementação de sistemas complexos de monitoramento.
               </p>
               <p className="text-pretty">

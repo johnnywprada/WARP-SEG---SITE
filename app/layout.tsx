@@ -7,9 +7,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "WARP Segurança Eletrônica - Câmeras, Alarmes e Controle de Acesso",
+  title: "DÉF Segurança Eletrônica - Câmeras, Alarmes e Controle de Acesso",
   description:
-    "WARP Segurança Eletrônica oferece vendas, instalação e manutenção de câmeras, alarmes, controle de acesso e casa inteligente. Consultoria especializada em monitoramento 24h.",
+    "DÉF Segurança Eletrônica oferece vendas, instalação e manutenção de câmeras, alarmes, controle de acesso e casa inteligente. Consultoria especializada em monitoramento 24h.",
   generator: "v0.app",
   icons: {
     icon: [
