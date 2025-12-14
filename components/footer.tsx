@@ -1,6 +1,9 @@
 import { Shield, Phone, Mail, MapPin } from "lucide-react"
 
 export function Footer() {
+  // Pega o ano atual automaticamente (ex: 2025)
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,9 +56,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-background/60">© 2024 WARP Segurança Eletrônica. Todos os direitos reservados.</p>
+        {/* RODAPÉ COM COPYRIGHT E SUA ASSINATURA */}
+        <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+          <p className="text-sm text-background/60">
+            © {currentYear} <strong>WARP Segurança Eletrônica</strong>. Todos os direitos reservados.
+          </p>
+          
+          <p className="text-sm text-background/60">
+            Desenvolvido por{" "}
+<a 
+  href="https://wa.me/5511959902308?text=Olá,%20vi%20o%20site%20da%20DÉF%20e%20gostaria%20de%20um%20orçamento" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="font-bold text-[#dc2626] hover:text-[#dc2626]/80 transition-colors"
+>
+  WARP Sistemas Inteligentes
+</a>
+          </p>
         </div>
+
       </div>
     </footer>
   )
