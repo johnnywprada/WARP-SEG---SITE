@@ -20,17 +20,18 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-100 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-auto items-center justify-between">
           <div className="flex items-center space-x-3">
             <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
               <Image
-                src="/images/warp-logo-novo.png"
+                src="/images/def-logo-novo.png"
                 alt="DÉF Segurança Eletrônica"
-                width={180}
-                height={60}
-                className="h-12 w-auto"
+                width={2011}
+                height={755}
+                quality={100}
+                className="h-30 w-auto"
               />
             </button>
           </div>

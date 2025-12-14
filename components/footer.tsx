@@ -17,17 +17,17 @@ export function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>(11) 95990-2308</span>
+                <span>(11) 93403-1429</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>johnnywprada@gmail.com</span>
+                <span>andradepauloo526@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span>São Paulo - SP</span>
               </div>
-              <div className="text-xs text-background/60 mt-2">CNPJ: 35.550.155/0001-86</div>
+              <div className="text-xs text-background/60 mt-2">CNPJ: 27.868.831/0001-36</div>
             </div>
           </div>
 

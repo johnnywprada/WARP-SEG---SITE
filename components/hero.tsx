@@ -64,11 +64,11 @@ export function Hero() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
               <div className="text-center p-4 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-2xl font-bold text-primary">20+</div>
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </div>
               <div className="text-center p-4 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary">DIVERSOS</div>
+                <div className="text-1xl font-bold text-primary">DIVERSOS</div>
                 <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
               </div>
               <div className="text-center p-4 bg-muted/50 rounded-lg">
@@ -94,10 +94,10 @@ export function Hero() {
                 className="cursor-pointer"
               >
                 <Image
-                  src="/images/mascote-novo.png"
+                  src="/images/mascote-novo-def.png"
                   alt="Mascote DÉF - Robô de Segurança Eletrônica"
-                  width={400}
-                  height={500}
+                  width={1984}
+                  height={2144}
                   className="w-full max-w-sm h-auto floating-animation hover:scale-105 transition-transform duration-300"
                   priority
                 />

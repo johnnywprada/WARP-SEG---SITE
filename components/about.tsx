@@ -4,7 +4,7 @@ import { Award, Clock, Users, Wrench } from "lucide-react"
 const stats = [
   {
     icon: Award,
-    number: "2+",
+    number: "20+",
     label: "Anos de Experiência",
     description: "Expertise consolidada em segurança eletrônica",
   },
