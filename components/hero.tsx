@@ -68,7 +68,7 @@ export function Hero() {
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </div>
               <div className="text-center p-4 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary">DIVERSOS</div>
+                <div className="text-1xl font-bold text-primary">DIVERSOS</div>
                 <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
               </div>
               <div className="text-center p-4 bg-muted/50 rounded-lg">
@@ -96,8 +96,8 @@ export function Hero() {
                 <Image
                   src="/images/mascote-novo.png"
                   alt="Mascote WARP - Robô de Segurança Eletrônica"
-                  width={400}
-                  height={500}
+                  width={562}
+                  height={806}
                   className="w-full max-w-sm h-auto floating-animation hover:scale-105 transition-transform duration-300"
                   priority
                 />
