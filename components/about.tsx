@@ -59,7 +59,7 @@ export function About() {
               <Card key={index} className="text-center">
                 <CardHeader className="pb-2">
                   <stat.icon className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-3xl font-bold text-primary">{stat.number}</CardTitle>
+                  <CardTitle className="text-1xl font-bold text-primary">{stat.number}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <h3 className="font-semibold text-foreground mb-1">{stat.label}</h3>
