@@ -26,7 +26,7 @@ export function Header() {
           <div className="flex items-center space-x-3">
             <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
               <Image
-                src="/images/D'GA DW-logo-novo.png"
+                src="/images/dgadw-logo-novo.png"
                 alt="D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial"
                 width={448}
                 height={200}
