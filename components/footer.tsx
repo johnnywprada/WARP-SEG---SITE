@@ -11,7 +11,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">WARP Segurança Eletrônica</span>
+              <span className="text-xl font-bold">D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial</span>
             </div>
             <p className="text-background/80 mb-4 text-pretty">
               Especialistas em segurança eletrônica oferecendo soluções completas para proteger o que é mais importante
@@ -20,17 +20,17 @@ export function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>(11) 95990-2308</span>
+                <span>(11) 97572-3440</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>johnnywprada@gmail.com</span>
+                <span>-</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span>São Paulo - SP</span>
               </div>
-              <div className="text-xs text-background/60 mt-2">CNPJ: 35.550.155/0001-86</div>
+              {/* <div className="text-xs text-background/60 mt-2">CNPJ: 35.550.155/0001-86</div> */}
             </div>
           </div>
 
@@ -40,18 +40,18 @@ export function Footer() {
               <li>Câmeras de Segurança</li>
               <li>Sistemas de Alarme</li>
               <li>Controle de Acesso</li>
-              <li>Casa Inteligente</li>
+              <li>Portaria Virtual</li>
               <li>Manutenção</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Consultoria</h3>
+            <h3 className="font-semibold mb-4">Portaria Virtual</h3>
             <ul className="space-y-2 text-sm text-background/80">
-              <li>Sala de Monitoramento</li>
-              <li>Atualização de Software</li>
-              <li>Treinamento</li>
-              <li>Manuais e POPs</li>
+              <li>Atendimento Remoto 24h</li>
+              <li>Controle de Acesso Inteligente</li>
+              <li>Transição e Treinamento</li>
+              <li>Manutenção e Contingência</li>
             </ul>
           </div>
         </div>
@@ -59,13 +59,13 @@ export function Footer() {
         {/* RODAPÉ COM COPYRIGHT E SUA ASSINATURA */}
         <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
           <p className="text-sm text-background/60">
-            © {currentYear} <strong>WARP Segurança Eletrônica</strong>. Todos os direitos reservados.
+            © {currentYear} <strong>D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial</strong>. Todos os direitos reservados.
           </p>
           
           <p className="text-sm text-background/60">
             Desenvolvido por{" "}
 <a 
-  href="https://wa.me/5511959902308?text=Olá,%20vi%20o%20site%20da%20DÉF%20e%20gostaria%20de%20um%20orçamento" 
+  href="https://wa.me/5511959902308?text=Olá,%20vi%20o%20site%20da%20D'GA%20DW%20e%20gostaria%20de%20um%20orçamento%20para%20criação%20de%20um%20site." 
   target="_blank" 
   rel="noopener noreferrer"
   className="font-bold text-[#dc2626] hover:text-[#dc2626]/80 transition-colors"

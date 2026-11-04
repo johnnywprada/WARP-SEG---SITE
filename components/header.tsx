@@ -26,8 +26,8 @@ export function Header() {
           <div className="flex items-center space-x-3">
             <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
               <Image
-                src="/images/warp-logo-novo.png"
-                alt="WARP Segurança Eletrônica"
+                src="/images/D'GA DW-logo-novo.png"
+                alt="D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial"
                 width={448}
                 height={200}
                 quality={100}
@@ -40,8 +40,8 @@ export function Header() {
             <a href="#servicos" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Serviços
             </a>
-            <a href="#consultoria" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Consultoria
+            <a href="#portaria-virtual" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Portaria Virtual
             </a>
             <a href="#sobre" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Sobre
@@ -64,7 +64,7 @@ export function Header() {
                 Serviços
               </a>
               <a
-                href="#consultoria"
+                href="#portaria-virtual"
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary"
               >
                 Consultoria

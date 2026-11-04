@@ -31,7 +31,7 @@ export function Contact() {
 *Serviço:* ${formData.service}
 *Mensagem:* ${formData.message}`
 
-    const whatsappLink = `https://wa.me/5511959902308?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappLink = `https://wa.me/5511975723440?text=${encodeURIComponent(whatsappMessage)}`
 
     // Abre WhatsApp em nova aba
     window.open(whatsappLink, "_blank")
@@ -50,9 +50,9 @@ export function Contact() {
     <section id="contato" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">Entre em Contato</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Entre em Contato</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Solicite um orçamento gratuito ou tire suas dúvidas. Nossa equipe está pronta para atendê-lo.
+            Solicite um orçamento ou tire suas dúvidas. Nossa equipe está pronta para atendê-lo.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export function Contact() {
                         <option value="cameras">Câmeras de Segurança</option>
                         <option value="alarmes">Sistemas de Alarme</option>
                         <option value="controle-acesso">Controle de Acesso</option>
-                        <option value="casa-inteligente">Casa Inteligente</option>
+                        <option value="Portaria Virtual">Portaria Virtual</option>
                         <option value="consultoria">Consultoria Especializada</option>
                         <option value="manutencao">Manutenção</option>
                       </select>
@@ -138,7 +138,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">(11) 95990-2308</p>
+                <p className="text-lg font-semibold">(11) 97572-3440</p>
                 <p className="text-sm text-muted-foreground">WhatsApp disponível</p>
               </CardContent>
             </Card>
@@ -151,7 +151,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">johnnywprada@gmail.com</p>
+                <p className="text-lg font-semibold">-</p>
                 <p className="text-sm text-muted-foreground">Resposta em até 24h</p>
               </CardContent>
             </Card>

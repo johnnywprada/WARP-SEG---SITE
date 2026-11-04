@@ -4,7 +4,7 @@ import { Award, Clock, Users, Wrench } from "lucide-react"
 const stats = [
   {
     icon: Award,
-    number: "2+",
+    number: "15+",
     label: "Anos de Experiência",
     description: "Expertise consolidada em segurança eletrônica",
   },
@@ -34,22 +34,18 @@ export function About() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Por que escolher a WARP?
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-balance">
+              Por que escolher a D'GA DW?
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg text-pretty">
-                A WARP Segurança Eletrônica é uma empresa especializada em soluções completas de segurança, oferecendo
-                desde a venda de equipamentos até a implementação de sistemas complexos de monitoramento.
+                A D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial é especializada em soluções ponta a ponta de segurança tecnológica. Não somos apenas instaladores; atuamos desde a venda e execução da infraestrutura física até a operação contínua através da nossa Central de Monitoramento 24h e Portaria Virtual.
               </p>
               <p className="text-pretty">
-                Nossa equipe técnica altamente qualificada possui vasta experiência em projetos residenciais e
-                corporativos, garantindo a implementação de soluções personalizadas que atendem às necessidades
-                específicas de cada cliente.
+                Nossa equipe técnica possui vasta experiência em projetos para condomínios e clientes corporativos. Entregamos soluções robustas e personalizadas, integrando controle de acesso avançado, CFTV e sistemas de alarme em um ecossistema unificado.
               </p>
               <p className="text-pretty">
-                Trabalhamos com as melhores marcas do mercado e oferecemos suporte técnico especializado, manutenção
-                preventiva e consultoria para maximizar a eficiência e segurança dos seus sistemas.
+                Trabalhamos com as melhores marcas do mercado (Intelbras) para garantir confiabilidade extrema. Oferecemos suporte técnico ágil, manutenção preventiva e uma operação de resposta ininterrupta para maximizar a segurança e reduzir os custos operacionais do seu patrimônio.
               </p>
             </div>
           </div>
@@ -59,7 +55,7 @@ export function About() {
               <Card key={index} className="text-center">
                 <CardHeader className="pb-2">
                   <stat.icon className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-1xl font-bold text-primary">{stat.number}</CardTitle>
+                  <CardTitle className="text-2xl font-bold text-primary">{stat.number}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <h3 className="font-semibold text-foreground mb-1">{stat.label}</h3>
