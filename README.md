@@ -6,7 +6,7 @@
 
 Repositório oficial da plataforma web corporativa da **D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial**. 
 
-Este projeto foi arquitetado para posicionar a empresa no mercado de alta tecnologia, com foco em conversão de leads para serviços de **Portaria Virtual**, **Controle de Acesso Avançado** e **Monitoramento 24 horas** para condomínios e empresas.
+Este projeto foi arquitetado para posicionar a empresa no mercado de alta tecnologia, com foco em conversão de leads para serviços de **Portaria Remota/Virtual**, **Controle de Acesso Avançado** e **Monitoramento 24 horas** para condomínios e empresas.
 
 ---
 

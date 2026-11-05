@@ -58,7 +58,7 @@ export function Consulting() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">
-            Portaria Virtual para Condomínios
+            Portaria Remota/Virtual para Condomínios
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             Aumente o nível de segurança do seu condomínio e reduza os custos operacionais com a nossa solução completa de Portaria Inteligente 24 horas.

@@ -102,7 +102,7 @@ export function Contact() {
                         <option value="cameras">Câmeras de Segurança</option>
                         <option value="alarmes">Sistemas de Alarme</option>
                         <option value="controle-acesso">Controle de Acesso</option>
-                        <option value="Portaria Virtual">Portaria Virtual</option>
+                        <option value="Portaria Remota/Virtual">Portaria Remota/Virtual</option>
                         <option value="consultoria">Consultoria Especializada</option>
                         <option value="manutencao">Manutenção</option>
                       </select>

@@ -39,7 +39,7 @@ export function About() {
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg text-pretty">
-                A D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial é especializada em soluções ponta a ponta de segurança tecnológica. Não somos apenas instaladores; atuamos desde a venda e execução da infraestrutura física até a operação contínua através da nossa Central de Monitoramento 24h e Portaria Virtual.
+                A D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial é especializada em soluções ponta a ponta de segurança tecnológica. Não somos apenas instaladores; atuamos desde a venda e execução da infraestrutura física até a operação contínua através da nossa Central de Monitoramento 24h e Portaria Remota/Virtual.
               </p>
               <p className="text-pretty">
                 Nossa equipe técnica possui vasta experiência em projetos para condomínios e clientes corporativos. Entregamos soluções robustas e personalizadas, integrando controle de acesso avançado, CFTV e sistemas de alarme em um ecossistema unificado.

@@ -10,7 +10,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial",
   description:
-    "D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial oferece vendas, instalação e manutenção de câmeras, alarmes, controle de acesso e portaria virtual.",
+    "D'GA DW - Multiserviços em Eletrônica e Inteligência Artificial oferece vendas, instalação e manutenção de câmeras, alarmes, controle de acesso e Portaria Remota/Virtual.",
   generator: "v0.app",
   icons: {
     icon: [

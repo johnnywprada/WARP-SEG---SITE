@@ -40,13 +40,13 @@ export function Footer() {
               <li>Câmeras de Segurança</li>
               <li>Sistemas de Alarme</li>
               <li>Controle de Acesso</li>
-              <li>Portaria Virtual</li>
+              <li>Portaria Remota/Virtual</li>
               <li>Manutenção</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Portaria Virtual</h3>
+            <h3 className="font-semibold mb-4">Portaria Remota/Virtual</h3>
             <ul className="space-y-2 text-sm text-background/80">
               <li>Atendimento Remoto 24h</li>
               <li>Controle de Acesso Inteligente</li>

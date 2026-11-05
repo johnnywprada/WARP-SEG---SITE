@@ -41,7 +41,7 @@ export function Header() {
               Serviços
             </a>
             <a href="#portaria-virtual" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Portaria Virtual
+              Portaria Remota/Virtual
             </a>
             <a href="#sobre" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Sobre

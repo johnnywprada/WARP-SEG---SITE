@@ -14,7 +14,7 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 text-pretty">
-              A D'GA DW oferece soluções completas em segurança eletrônica, Portaria Virtual e monitoramento 24h com tecnologia de ponta para condomínios e empresas.
+              A D'GA DW oferece soluções completas em segurança eletrônica, Portaria Remota/Virtual e monitoramento 24h com tecnologia de ponta para condomínios e empresas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

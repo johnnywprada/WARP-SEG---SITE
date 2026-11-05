@@ -38,7 +38,7 @@ const services = [
   },
   {
     image: "/images/portaria-virtual.png",
-    title: "Portaria Virtual",
+    title: "Portaria Remota/Virtual",
     description: "Controle de acesso remoto e monitoramento 24 horas. Eleve a segurança do condomínio e reduza drasticamente os custos operacionais.",
     features: [
       "Atendimento 24h ininterrupto",
