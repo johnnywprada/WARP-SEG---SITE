@@ -151,7 +151,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">comercial.002@dgamultiservice.com.br</p>
+                <p className="text-base font-semibold">comercial.002@dgamultiservice.com.br</p>
                 <p className="text-sm text-muted-foreground">Resposta em até 24h</p>
               </CardContent>
             </Card>

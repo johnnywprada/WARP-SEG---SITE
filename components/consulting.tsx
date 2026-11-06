@@ -100,10 +100,10 @@ export function Consulting() {
         </div>
 
         <div className="text-center">
-          <Card className="max-w-2xl mx-auto bg-primary text-primary-foreground">
+          <Card className="max-w-2xl mx-auto bg-primary text-popover">
             <CardHeader>
               <CardTitle className="text-2xl">Pronto para modernizar seu condomínio?</CardTitle>
-              <CardDescription className="text-primary-foreground/80 text-pretty">
+              <CardDescription className="text-popover mt-2">
                 Nossa equipe fará uma análise de risco sem custo e desenhará um projeto sob medida para a infraestrutura do seu prédio.
               </CardDescription>
             </CardHeader>
