@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative py-2 lg:py-2 bg-background overflow-hidden">
+    <section className="relative py-2 bg-muted/50 lg:py-2 bg-muted/50 bg-muted/50 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -65,7 +65,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify">
             {/* O SEGREDO ESTÁ AQUI: A div relative agora segura o mascote e as bolinhas juntas */}
             <div className="relative">
               

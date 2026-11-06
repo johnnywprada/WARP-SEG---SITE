@@ -69,7 +69,7 @@ export function Consulting() {
           {portariaServices.map((service, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg transition-all duration-300 bg-white border-border hover:border-primary hover:scale-105"
+              className="h-full hover:shadow-lg transition-all duration-300  border-border hover:border-primary hover:scale-105"
             >
               <CardHeader>
                 <div className="flex items-center space-x-4">

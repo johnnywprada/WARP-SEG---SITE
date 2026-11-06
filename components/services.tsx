@@ -51,7 +51,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 bg-muted/50 bg-muted/50 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Nossos Serviços</h2>
@@ -64,7 +64,7 @@ export function Services() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg transition-all duration-300 bg-white border-border hover:border-primary hover:scale-105 overflow-hidden flex flex-col"
+              className="h-full hover:shadow-lg transition-all duration-300  border-border hover:border-primary hover:scale-105 overflow-hidden flex flex-col"
             >
               <div className="w-full h-80 relative border-b border-border/50">
                 <Image
@@ -93,31 +93,31 @@ export function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-gradient-to-br from-primary to-accent text-primary-foreground hover:scale-105 transition-transform duration-300">
+          <Card className="bg-gradient-to-br from-primary to-accent text-popover hover:scale-105 transition-transform duration-300">
             <CardHeader className="text-center">
-              <ShoppingCart className="h-10 w-10 mx-auto mb-4 text-primary-foreground" />
+              <ShoppingCart className="h-10 w-10 mx-auto mb-4 text-popover" />
               <CardTitle>Vendas</CardTitle>
-              <CardDescription className="text-primary-foreground/90">
+              <CardDescription className="text-popover">
                 Equipamentos de alta qualidade das melhores marcas do mercado
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="bg-gradient-to-br from-accent to-primary text-primary-foreground hover:scale-105 transition-transform duration-300">
+          <Card className="bg-gradient-to-br from-accent to-primary text-popover hover:scale-105 transition-transform duration-300">
             <CardHeader className="text-center">
-              <Wrench className="h-10 w-10 mx-auto mb-4 text-primary-foreground" />
+              <Wrench className="h-10 w-10 mx-auto mb-4 text-popover" />
               <CardTitle>Instalação</CardTitle>
-              <CardDescription className="text-primary-foreground/90">
+              <CardDescription className="text-popover">
                 Instalação profissional com garantia e suporte técnico especializado
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="bg-gradient-to-br from-primary to-secondary text-primary-foreground hover:scale-105 transition-transform duration-300">
+          <Card className="bg-gradient-to-br from-primary to-secondary text-popover hover:scale-105 transition-transform duration-300">
             <CardHeader className="text-center">
-              <Shield className="h-10 w-10 mx-auto mb-4 text-secondary-foreground" />
-              <CardTitle className="text-secondary-foreground">Manutenção</CardTitle>
-              <CardDescription className="text-secondary-foreground/90">
+              <Shield className="h-10 w-10 mx-auto mb-4 text-popover" />
+              <CardTitle className="text-popover">Manutenção</CardTitle>
+              <CardDescription className="text-popover/90">
                 Manutenção preventiva e corretiva para máximo desempenho
               </CardDescription>
             </CardHeader>
