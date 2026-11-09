@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react"
 export function WhatsAppButton() {
   // Insira o número do comercial da D'GA DW. 
   // Formato obrigatório: 55 + DDD + Número (sem espaços ou traços).
-  const whatsappNumber = "5511975723440" 
+  const whatsappNumber = "5511975898511" 
   
   // Mensagem pré-preenchida para facilitar a vida do lead
   const defaultMessage = "Olá! Acessei o site da D'GA DW e gostaria de falar com um consultor sobre Segurança Eletrônica."

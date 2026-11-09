@@ -31,7 +31,7 @@ export function Contact() {
 *Serviço:* ${formData.service}
 *Mensagem:* ${formData.message}`
 
-    const whatsappLink = `https://wa.me/5511975723440?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappLink = `https://wa.me/5511975898511?text=${encodeURIComponent(whatsappMessage)}`
 
     // Abre WhatsApp em nova aba
     window.open(whatsappLink, "_blank")
@@ -138,7 +138,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold">(11) 97572-3440</p>
+                <p className="text-lg font-semibold">(11) 97589-8511</p>
                 <p className="text-sm text-muted-foreground">WhatsApp disponível</p>
               </CardContent>
             </Card>
