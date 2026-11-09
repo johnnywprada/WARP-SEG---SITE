@@ -54,7 +54,7 @@ const portariaServices = [
 
 export function Consulting() {
   return (
-    <section id="portaria-virtual" className="py-20 bg-muted/50">
+    <section id="portaria-virtual" className="py-20 dga-glass-panel">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">

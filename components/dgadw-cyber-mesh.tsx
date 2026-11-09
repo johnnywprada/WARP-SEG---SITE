@@ -1,120 +1,184 @@
+"use client"
+
+import { useEffect, useRef } from "react"
 
 export function DgadwCyberMesh() {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return
+
+    let width = window.innerWidth
+    let height = window.innerHeight
+    canvas.width = width
+    canvas.height = height
+
+    const gridSize = 40
+
+    class DataTrace {
+      x: number
+      y: number
+      history: { x: number; y: number }[]
+      maxLength: number
+      direction: number 
+      speed: number
+      color: string
+      active: boolean
+      lineWidth: number
+
+      constructor() {
+        this.x = Math.floor((Math.random() * width) / gridSize) * gridSize
+        this.y = Math.floor((Math.random() * height) / gridSize) * gridSize
+        this.history = []
+        
+        this.maxLength = Math.floor(Math.random() * 20) + 15 
+        this.direction = Math.floor(Math.random() * 4)
+        this.speed = 2 
+        
+        const isBlue = Math.random() > 0.25
+        this.color = isBlue ? "0, 191, 255" : "255, 121, 0"
+        this.lineWidth = isBlue ? 1.5 : 2.5 
+        
+        this.active = true
+      }
+
+      update() {
+        if (!this.active) return
+
+        this.history.push({ x: this.x, y: this.y })
+        if (this.history.length > this.maxLength * (gridSize / this.speed)) {
+          this.history.shift()
+        }
+
+        if (this.direction === 0) this.y -= this.speed
+        else if (this.direction === 1) this.x += this.speed
+        else if (this.direction === 2) this.y += this.speed
+        else if (this.direction === 3) this.x -= this.speed
+
+        if (this.x % gridSize === 0 && this.y % gridSize === 0) {
+          if (Math.random() < 0.3) {
+            if (this.direction === 0 || this.direction === 2) {
+              this.direction = Math.random() > 0.5 ? 1 : 3
+            } else {
+              this.direction = Math.random() > 0.5 ? 0 : 2
+            }
+          }
+          
+          if (
+            Math.random() < 0.05 ||
+            this.x < 0 ||
+            this.x > width ||
+            this.y < 0 ||
+            this.y > height
+          ) {
+            this.active = false
+          }
+        }
+      }
+
+      draw() {
+        if (this.history.length < 2 || !ctx) return // Adicionada verificação rigorosa do ctx
+
+        ctx.beginPath()
+        ctx.moveTo(this.history[0].x, this.history[0].y)
+
+        for (let i = 1; i < this.history.length; i++) {
+          ctx.lineTo(this.history[i].x, this.history[i].y)
+        }
+
+        const startX = this.history[0].x
+        const startY = this.history[0].y
+        
+        const gradient = ctx.createLinearGradient(startX, startY, this.x, this.y)
+        gradient.addColorStop(0, `rgba(${this.color}, 0)`)
+        gradient.addColorStop(0.5, `rgba(${this.color}, 0.5)`)
+        gradient.addColorStop(1, `rgba(${this.color}, 1)`)
+
+        ctx.strokeStyle = gradient
+        ctx.lineWidth = this.lineWidth
+
+        ctx.shadowBlur = 12
+        ctx.shadowColor = `rgba(${this.color}, 0.8)`
+        ctx.stroke()
+
+        ctx.beginPath()
+        ctx.arc(this.x, this.y, this.lineWidth * 1.5, 0, Math.PI * 2)
+        ctx.fillStyle = "#FFFFFF"
+        ctx.shadowBlur = 15
+        ctx.shadowColor = `rgba(${this.color}, 1)`
+        ctx.fill()
+
+        ctx.shadowBlur = 0
+      }
+    }
+
+    const traces: DataTrace[] = []
+    const traceCount = Math.floor((width * height) / 12000)
+
+    for (let i = 0; i < traceCount; i++) {
+      traces.push(new DataTrace())
+    }
+
+    const drawGrid = () => {
+      if (!ctx) return // Adicionada verificação rigorosa do ctx
+      ctx.strokeStyle = "rgba(0, 27, 77, 0.03)" 
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      for (let x = 0; x < width; x += gridSize) {
+        ctx.moveTo(x, 0)
+        ctx.lineTo(x, height)
+      }
+      for (let y = 0; y < height; y += gridSize) {
+        ctx.moveTo(0, y)
+        ctx.lineTo(width, y)
+      }
+      ctx.stroke()
+    }
+
+    let animationFrameId: number
+
+    const render = () => {
+      if (!ctx) return // Adicionada verificação rigorosa do ctx
+      ctx.clearRect(0, 0, width, height)
+      drawGrid()
+
+      for (let i = 0; i < traces.length; i++) {
+        if (!traces[i].active) {
+          traces[i] = new DataTrace()
+        }
+        traces[i].update()
+        traces[i].draw()
+      }
+
+      animationFrameId = requestAnimationFrame(render)
+    }
+
+    render()
+
+    const handleResize = () => {
+      width = window.innerWidth
+      height = window.innerHeight
+      if (canvasRef.current) {
+        canvasRef.current.width = width
+        canvasRef.current.height = height
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+      cancelAnimationFrame(animationFrameId)
+    }
+  }, [])
+
   return (
-    <div className="dgadw-cyber-mesh" aria-hidden="true">
-      <svg
-        viewBox="0 0 1440 1000"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient
-            id="dgadwPulseGradient"
-            x1="0"
-            y1="0"
-            x2="1"
-            y2="0"
-          >
-            <stop offset="0%" stopColor="#FF4500" />
-            <stop offset="50%" stopColor="#FFB900" />
-            <stop offset="100%" stopColor="#FF7900" />
-          </linearGradient>
-
-          <filter id="dgadwGlow" x="-100%" y="-100%" width="300%" height="300%">
-            <feGaussianBlur stdDeviation="4" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-
-        {/* CIRCUITOS SUPERIORES ESQUERDOS */}
-        <g>
-          <path className="dgadw-circuit-line"
-            d="M65 0 V95 L35 125 V260 H125 V325 H220" />
-          <path className="dgadw-circuit-line"
-            d="M145 0 V65 L185 105 V175 H265 V245" />
-          <path className="dgadw-circuit-line"
-            d="M245 0 V45 L210 80 V145 H320 V205 H390" />
-          <path className="dgadw-circuit-silver"
-            d="M25 0 V75 L5 95 V195 H75 V255" />
-          <path className="dgadw-circuit-silver"
-            d="M195 0 V45 L235 85 V130 H295" />
-          <path className="dgadw-circuit-gold"
-            d="M0 365 H75 V420 H145 V475 H230" />
-
-          <path className="dgadw-circuit-pulse"
-            d="M65 0 V95 L35 125 V260 H125 V325 H220" />
-          <path className="dgadw-circuit-pulse delay-1"
-            d="M145 0 V65 L185 105 V175 H265 V245" />
-        </g>
-
-        {/* CIRCUITOS SUPERIORES DIREITOS */}
-        <g>
-          <path className="dgadw-circuit-line"
-            d="M1375 0 V90 L1405 120 V245 H1315 V310 H1220" />
-          <path className="dgadw-circuit-line"
-            d="M1295 0 V65 L1255 105 V175 H1175 V245" />
-          <path className="dgadw-circuit-silver"
-            d="M1415 0 V75 L1435 95 V195 H1365 V255" />
-          <path className="dgadw-circuit-gold"
-            d="M1440 360 H1365 V415 H1295 V470 H1210" />
-
-          <path className="dgadw-circuit-pulse delay-2"
-            d="M1375 0 V90 L1405 120 V245 H1315 V310 H1220" />
-        </g>
-
-        {/* CIRCUITOS INFERIORES ESQUERDOS */}
-        <g>
-          <path className="dgadw-circuit-line"
-            d="M0 700 H85 V760 H165 V825 H255 V900 H345 V1000" />
-          <path className="dgadw-circuit-line"
-            d="M0 835 H55 V885 H135 V945 H225 V1000" />
-          <path className="dgadw-circuit-silver"
-            d="M0 610 H45 V665 H115 V725 H195" />
-          <path className="dgadw-circuit-gold"
-            d="M0 940 H95 V975 H175 V1000" />
-
-          <path className="dgadw-circuit-pulse delay-3"
-            d="M0 700 H85 V760 H165 V825 H255 V900 H345 V1000" />
-        </g>
-
-        {/* CIRCUITOS INFERIORES DIREITOS */}
-        <g>
-          <path className="dgadw-circuit-line"
-            d="M1440 700 H1355 V760 H1275 V825 H1185 V900 H1095 V1000" />
-          <path className="dgadw-circuit-line"
-            d="M1440 835 H1385 V885 H1305 V945 H1215 V1000" />
-          <path className="dgadw-circuit-silver"
-            d="M1440 610 H1395 V665 H1325 V725 H1245" />
-          <path className="dgadw-circuit-gold"
-            d="M1440 940 H1345 V975 H1265 V1000" />
-
-          <path className="dgadw-circuit-pulse delay-1"
-            d="M1440 700 H1355 V760 H1275 V825 H1185 V900 H1095 V1000" />
-        </g>
-
-        {/* PONTOS DE CONEXÃO */}
-        <g>
-          <circle className="dgadw-circuit-node" cx="65" cy="95" r="5" />
-          <circle className="dgadw-circuit-node" cx="125" cy="325" r="5" />
-          <circle className="dgadw-circuit-node" cx="265" cy="245" r="5" />
-          <circle className="dgadw-circuit-node-gold" cx="35" cy="260" r="4" />
-
-          <circle className="dgadw-circuit-node" cx="1375" cy="90" r="5" />
-          <circle className="dgadw-circuit-node" cx="1315" cy="310" r="5" />
-          <circle className="dgadw-circuit-node-gold" cx="1405" cy="245" r="4" />
-
-          <circle className="dgadw-circuit-node" cx="85" cy="700" r="5" />
-          <circle className="dgadw-circuit-node" cx="255" cy="900" r="5" />
-          <circle className="dgadw-circuit-node-gold" cx="165" cy="825" r="4" />
-
-          <circle className="dgadw-circuit-node" cx="1355" cy="760" r="5" />
-          <circle className="dgadw-circuit-node" cx="1185" cy="900" r="5" />
-          <circle className="dgadw-circuit-node-gold" cx="1275" cy="825" r="4" />
-        </g>
-      </svg>
-    </div>
-  );
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 z-0 pointer-events-none"
+    />
+  )
 }

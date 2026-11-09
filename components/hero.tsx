@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative py-2 bg-muted/50 lg:py-2 bg-muted/50 bg-muted/50 overflow-hidden">
+    <section className="relative py-2 dga-glass-panel">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -33,7 +33,7 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto h-auto py-3 text-base sm:text-lg px-4 sm:px-8 whitespace-normal text-center bg-transparent"
+                className="w-full sm:w-auto h-auto py-3 text-base sm:text-lg px-4 sm:px-8 whitespace-normal text-center bg-popover"
                 onClick={() => {
                   const servicesSection = document.getElementById("servicos")
                   if (servicesSection) {
@@ -46,19 +46,19 @@ export function Hero() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-              <div className="text-center p-4 bg-muted/50 rounded-lg">
+              <div className="relative text-center p-6 bg-card rounded-xl border border-border/40 transition-all duration-300 hover:border-primary hover:shadow-[0_0_25px_rgba(255,121,0,0.15)] hover:-translate-y-1 group">
                 <div className="text-2xl font-bold text-primary">15+</div>
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </div>
-              <div className="text-center p-4 bg-muted/50 rounded-lg">
+              <div className="relative text-center p-6 bg-card rounded-xl border border-border/40 transition-all duration-300 hover:border-primary hover:shadow-[0_0_25px_rgba(255,121,0,0.15)] hover:-translate-y-1 group">
                 <div className="text-xl font-bold text-primary">DIVERSOS</div>
                 <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
               </div>
-              <div className="text-center p-4 bg-muted/50 rounded-lg">
+              <div className="relative text-center p-6 bg-card rounded-xl border border-border/40 transition-all duration-300 hover:border-primary hover:shadow-[0_0_25px_rgba(255,121,0,0.15)] hover:-translate-y-1 group">
                 <div className="text-2xl font-bold text-primary">24/7</div>
                 <div className="text-sm text-muted-foreground">Suporte Técnico</div>
               </div>
-              <div className="text-center p-4 bg-muted/50 rounded-lg">
+              <div className="relative text-center p-6 bg-card rounded-xl border border-border/40 transition-all duration-300 hover:border-primary hover:shadow-[0_0_25px_rgba(255,121,0,0.15)] hover:-translate-y-1 group">
                 <div className="text-2xl font-bold text-primary">100%</div>
                 <div className="text-sm text-muted-foreground">Satisfação</div>
               </div>
